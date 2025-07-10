@@ -1,0 +1,735 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+html,
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: auto;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+p {
+  margin: 0;
+}
+a:hover {
+  color: #d4af37;
+  /* класичне золото */
+  transition: color 0.3s ease;
+}
+a,
+ul,
+li {
+  text-decoration: none;
+  font-style: normal;
+  list-style: none;
+  padding: 0;
+  color: #f5e7a2;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+  padding: 20px;
+}
+.logo img {
+  max-width: 100px;
+  width: 1005;
+}
+.header>.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  border-bottom: 3px solid #d4af37; /* тонка золота лінія внизу */
+  color: #3b2e00;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* легка тінь для об'єму */
+}
+.nav-list {
+  display: flex;
+  gap: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.nav-list>li {
+  border-bottom: solid 3px #d4af37;
+  /* класичне золото */
+}
+
+.hero {
+  background: linear-gradient(180deg, #1a1200 0%, #4b3200 60%, #d4af37 100%);
+  color: #fff9e5;
+  /* м’який світло-золотистий колір тексту */
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.casino {
+  background: linear-gradient(135deg, #a69677, #f8eacf, #595750);
+  padding: 40px 20px;
+  color: #f5e7a2;
+  /* світло-золотистий текст для контрасту */
+  box-shadow: inset 0 0 50px rgba(212, 175, 55, 0.4);
+}
+
+.hero > .container {
+  text-align: center;
+  padding: 50px 0;
+}
+.grid-layout {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.casino-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.casino-item {
+  display: flex;
+  background: linear-gradient(145deg, #a97a1f, #dad4c1);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.5),
+    /* глибша тінь для “вау” ефекту */
+    inset 0 0 15px rgba(212, 175, 55, 0.7);
+  /* внутрішній золотий блиск */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.casino-item:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 8px 20px rgba(212, 175, 55, 0.9),
+    /* яскравий зовнішній блиск */
+    inset 0 0 25px rgba(255, 223, 100, 0.8);
+}
+
+.casino-item:hover {
+  transform: scale(1.02);
+}
+
+.casino-item img {
+  width: 330px;
+  object-fit: cover;
+}
+
+.casino-text {
+  padding: 20px;
+  flex: 1;
+}
+
+.casino-text h4 {
+  margin-top: 0;
+  color: #004d28;
+}
+
+.casino-text ul {
+  margin: 10px 0;
+}
+.button {
+  background-color: #d4af37;
+  /* класичне золото */
+  padding: 10px 15px;
+  border-radius: 10px;
+  line-height: 1.8;
+  border: solid 2px #5c4500;
+  /* темно-золотий кордон */
+  text-transform: uppercase;
+  color: #1c1400;
+  /* дуже темний для читабельності */
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f7d559;
+  /* світліше золото на ховері */
+  color: #3b2700;
+  /* темно-коричневий текст */
+  box-shadow: 0 0 10px 2px rgba(212, 175, 55, 0.8);
+  /* легкий золотий світловий ореол */
+}
+
+.comment,
+.guide {
+  background-color: #0f0f0f;
+  color: #eee;
+  text-align: center;
+}
+.comment-container,
+.guide-container,
+.comment-container-policy {
+  margin: 0 200px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 30px;
+}
+.comment-container-policy {
+  flex-direction: column;
+}
+.comment-item {
+  flex: 1;
+  background-color: #eee;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #000;
+}
+.guide-item {
+  flex: 1;
+  background-color: #3c3c3c;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.guide-item > span {
+  max-width: 50px;
+  width: 100%;
+  fill: #eee;
+}
+.footer {
+  background-color: #eee;
+}
+.gamestops {
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.gamestops img {
+  max-width: 100px;
+  width: 100%;
+}
+.footer-content {
+  background-color: #1e1400;
+  /* дуже темний коричневий */
+  color: #f5e7a2;
+  border-top: 3px solid #d4af37;
+  /* тонка золота лінія зверху */
+}
+.footer-cooperation {
+  text-align: center;
+  padding: 20px 0;
+}
+.footer-content > .container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.footer-text,
+.footer-links {
+  flex: 1;
+  text-align: center;
+}
+
+/* pages */
+.content-section {
+  padding: 30px 0;
+}
+
+.content-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #004080;
+}
+
+.content-section p {
+  font-size: 1.125rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+@media (max-width: 720px) {
+  .section-casino {
+    flex-direction: column;
+  }
+  .casino-item {
+    flex-direction: column;
+    min-width: 300px;
+    width: 100%;
+  }
+  .container {
+    max-width: 330px;
+    width: 100%;
+  }
+  .comment-container,
+  .guide-container,
+  .comment-container-policy {
+    flex-direction: column;
+    margin: 0;
+  }
+  .gamestops {
+    flex-direction: column;
+  }
+  .footer-content > .container {
+    flex-direction: column;
+  }
+  :-webkit-any(article, aside, nav, section) h1,
+  h1 {
+    font-size: 1em;
+  }
+  .casino-item img {
+    min-width: 200px;
+    width: 100%;
+  }
+  .gamestops img {
+    max-width: 130px;
+  }
+  .nav-list {
+    flex-direction: column;
+  }
+}
+
+/* Styles de la bannière de cookies */
+/* Банер кукі - початковий стан: прихований через opacity та pointer-events */
+/* Банер cookie */
+#cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 215, 0, 0.6);
+    border: 2px solid #d4af37;
+    box-shadow: 0 8px 32px rgba(212, 175, 55, 0.6), 0 0 15px rgba(212, 175, 55, 0.8);
+    border-radius: 16px;
+  color: #0f0f0f;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 9999;
+}
+
+#cookie-banner.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cookie-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+.btn-accept {
+  background-color: #0b6632;
+}
+
+.btn-accept:hover {
+  background-color: #27ae60;
+}
+
+.btn-reject {
+  background-color: #8c382f;
+}
+
+.btn-reject:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+  #cookie-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .cookie-buttons {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  #cookie-banner p {
+    margin-bottom: 10px;
+  }
+}
+
+/* Уніфікований фон для всіх модалок */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 20, 0.75);
+  backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Уніфікований стиль вмісту модалок */
+.modal-content {
+  background: rgba(255, 215, 0, 0.1);
+  border: 2px solid #d4af37;
+  box-shadow:
+    0 8px 32px rgba(212, 175, 55, 0.6),
+    0 0 15px rgba(212, 175, 55, 0.8);
+  border-radius: 16px;
+  padding: 2rem 3rem;
+  width: 90%;
+  max-width: 550px;
+  max-height: 80vh;
+  overflow-y: auto;
+  color: #fff8d1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: left;
+  box-sizing: border-box;
+  transform: translateY(-40px);
+  opacity: 0;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
+  backdrop-filter: blur(8px);
+}
+
+.modal-overlay.active .modal-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #ffd54f;
+  text-align: center;
+  text-shadow: 0 0 8px #d4af37;
+}
+
+/* Поля форми */
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+  padding: 0.85rem 1.2rem;
+  border: 2px solid #d4af37;
+  border-radius: 12px;
+  font-size: 1rem;
+  background-color: rgba(212, 175, 55, 0.15);
+  color: #fff8d1;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+.modal-content input::placeholder,
+.modal-content textarea::placeholder {
+  color: #ffe082;
+  opacity: 1;
+  font-style: italic;
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus {
+  border-color: #fff176;
+  background-color: rgba(255, 255, 255, 0.15);
+  outline: none;
+  color: #fff;
+  box-shadow: 0 0 10px #ffd54f;
+}
+
+.modal-content textarea {
+  resize: vertical;
+  min-height: 140px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Кнопки модалок */
+.modal-buttons {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.modal-buttons button {
+  flex: 1;
+  padding: 0.85rem 1.4rem;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.modal-buttons button.close-modal {
+  flex: 0 0 auto;
+  padding: 0.65rem 1.25rem;
+  background: transparent;
+  border: 2px solid #ffd54f;
+  color: #ffd54f;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.modal-buttons button.close-modal:hover {
+  background-color: #ffd54f;
+  color: #0b1a00;
+  box-shadow: 0 0 10px #ffd54f;
+}
+
+.modal-buttons button[type="submit"] {
+  background-color: #ffd54f;
+  color: #3b2f00;
+  font-weight: 800;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px #d4af37;
+}
+
+.modal-buttons button[type="submit"]:hover {
+  background-color: #fff176;
+  color: #2a2200;
+  box-shadow: 0 0 15px 3px #fff176;
+}
+
+.modal-content p {
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  color: #fff8d1;
+  text-shadow: 0 0 4px rgba(212, 175, 55, 0.8);
+}
+
+/* Специфічні стилі для age popup (18+) */
+.age-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 20, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11000;
+}
+
+.age-popup-content {
+  background: rgba(212, 175, 55, 0.15);
+  border: 2px solid #d4af37;
+  border-radius: 16px;
+  padding: 3rem 4rem;
+  max-width: 420px;
+  box-shadow:
+    0 0 40px rgba(212, 175, 55, 0.7);
+  color: #fff8d1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.age-popup-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  color: #ffd54f;
+  text-shadow: 0 0 8px #d4af37;
+}
+
+.age-popup-content p {
+  font-size: 1.3rem;
+  margin-bottom: 35px;
+  color: #fff8d1;
+  text-shadow: 0 0 6px rgba(212, 175, 55, 0.9);
+}
+
+.age-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.age-buttons button {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+  text-transform: uppercase;
+}
+
+.age-buttons #ageYes {
+  background-color: #28a745;
+}
+
+.age-buttons #ageYes:hover {
+  background-color: #40c057;
+}
+
+.age-buttons #ageNo {
+  background-color: #dc3545;
+}
+
+.age-buttons #ageNo:hover {
+  background-color: #e55360;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 50px 70px;
+  background: linear-gradient(135deg, #1a1a1a, #2e2e2e);
+  border-radius: 32px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  color: #f0e68c;
+  /* світлий золотистий для контрасту */
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.8;
+  box-sizing: border-box;
+  transition: box-shadow 0.4s ease, background 0.4s ease;
+}
+
+.page-container:hover {
+  box-shadow: 0 30px 90px rgba(255, 215, 0, 0.8);
+  background: linear-gradient(135deg, #292929, #3f3f3f);
+}
+
+.page-container h1 {
+  color: #ffd700;
+  /* класичний золотий */
+  font-size: 3.8rem;
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  text-shadow: 0 0 12px #ffd700aa;
+  user-select: none;
+}
+
+.page-container h2 {
+  color: #f5deb3;
+  /* пшеничний світлий */
+  font-size: 2.6rem;
+  margin-top: 3.5rem;
+  margin-bottom: 24px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-shadow: 0 0 8px #deb887bb;
+}
+
+.page-container p {
+  font-size: 20px;
+  margin-bottom: 32px;
+  color: #dcdcdc;
+  /* світло-сірий */
+  font-weight: 400;
+  text-shadow: 0 0 3px #00000055;
+}
+
+.page-container strong {
+  color: #ffcc00;
+  /* насичений жовтий */
+  font-weight: 800;
+}
+
+.page-container a {
+  color: #f0e68c;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.page-container a:hover,
+.page-container a:focus {
+  color: #ffd700;
+  border-bottom-color: #ffd700;
+  outline: none;
+}
+
+/* Адаптивність */
+@media (max-width: 900px) {
+  .page-container {
+    padding: 40px 35px;
+    max-width: 95%;
+  }
+
+  .page-container h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+
+  .page-container h2 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .page-container p {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-container {
+    padding: 30px 20px;
+  }
+
+  .page-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+
+  .page-container h2 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 16px;
+  }
+
+  .page-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
