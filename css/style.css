@@ -44,6 +44,7 @@ li {
 .header {
   border-bottom: 3px solid #d4af37; /* тонка золота лінія внизу */
   color: #3b2e00;
+  background-color: #000000;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* легка тінь для об'єму */
 }
 .nav-list {
@@ -58,19 +59,19 @@ li {
 }
 
 .hero {
-  background: linear-gradient(180deg, #1a1200 0%, #4b3200 60%, #d4af37 100%);
-  color: #fff9e5;
-  /* м’який світло-золотистий колір тексту */
+  background: linear-gradient(180deg, #1c1800 0%, #680202 60%, #441313 100%);
+  color: #F5F5F5;
+  /* світлий для хорошого контрасту */
   font-size: 40px;
   font-weight: 700;
 }
-
 .casino {
-  background: linear-gradient(135deg, #a69677, #f8eacf, #595750);
+  background: linear-gradient(135deg, #bd6767, #ffe6e6, #371111);
   padding: 40px 20px;
-  color: #f5e7a2;
-  /* світло-золотистий текст для контрасту */
-  box-shadow: inset 0 0 50px rgba(212, 175, 55, 0.4);
+  color: #F5F5F5;
+  /* світлий, щоб контрастувати з темним фоном */
+  box-shadow: inset 0 0 50px rgba(104, 2, 2, 0.5);
+
 }
 
 .hero > .container {
@@ -93,16 +94,28 @@ li {
 
 .casino-item {
   display: flex;
-  background: linear-gradient(145deg, #a97a1f, #dad4c1);
+  background: linear-gradient(145deg, #441313, #680202);
+  /* темно-бордовий і насичений червоний */
   border-radius: 12px;
   overflow: hidden;
   box-shadow:
-    0 4px 12px rgba(0, 0, 0, 0.5),
-    /* глибша тінь для “вау” ефекту */
-    inset 0 0 15px rgba(212, 175, 55, 0.7);
+    0 4px 12px rgba(0, 0, 0, 0.7),
+    /* глибша тінь для “вау” */
+    inset 0 0 15px rgba(255, 215, 0, 0.8);
   /* внутрішній золотий блиск */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  color: #F5F5F5;
+  /* світлий текст для контрасту */
+  border: 1.5px solid #FFD700;
+  /* тонкий золотий бордер */
+}
+
+.casino-item:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.9),
+    inset 0 0 25px rgba(255, 215, 0, 1);
 }
 
 .casino-item:hover {
@@ -129,7 +142,7 @@ li {
 
 .casino-text h4 {
   margin-top: 0;
-  color: #004d28;
+  color: #0dbb68;
 }
 
 .casino-text ul {
